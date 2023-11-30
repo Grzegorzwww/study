@@ -78,3 +78,28 @@
 	}else{
 		sresult = si1 >> si2
 	}
+
+
+	//Tablice o zmiennej długości 
+	int matrix_sum(size_t rows, int m[][4]);
+
+	main()
+		int m1[5][4];
+		int m1[100][4];
+		matrix_sum(5, m1);
+
+	//wielkosc łancuchów
+		char str[100] = "Tutaj wschodzi słońce";
+		size_t str_size = sizeof(str); // 100;
+		size_t str_len = strlen(str); // 18
+		
+	// funkcja strlen
+	size_t strlen(char * str)
+	{
+		char * s;
+		for(s = str; s; ++s){
+			;
+		}
+		return s - str;
+	}
+
