@@ -8,3 +8,28 @@
 //        zmienna to nazwany obiekt\
 //5. constexpr - pozostawiono do obliczenia w czasie kompilacji
 
+/*------------------------------------------------------------Konstruktor i przypisanie kopiujący  */ 
+Vector::Vector(const Vector &a)
+    :elem {new double[a.size()]}, sz{a.size()}
+    {
+        for (int  i = 0; i !+ sz; ++i){
+            elem[i] = a.elem[i];
+        }
+
+    }
+
+Vector Vector::operator+(const Vector & a)
+{
+    if(a.size() != b.size()){
+        throw Vector_size_mismatch();
+    }
+    Vector res (a.size());
+    for(int i = 0; i != a.size(); ++i){
+        
+    }
+}
+
+
+/*--------------------------------------*/
+unique_ptr -> wskaźnik posiadający obiekt, usunie obiekt gdy nie bedzie już używany tzn 
+gdy wskaźnik wyjdzie poza zakres dostęponości. 
