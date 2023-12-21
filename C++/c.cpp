@@ -8,3 +8,38 @@
 //        zmienna to nazwany obiekt\
 //5. constexpr - pozostawiono do obliczenia w czasie kompilacji
 
+/*
+//----------------------------------------------------------
+    6. lista inicjalizacyjna :
+    Vector()std::initalizer_list<int>);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------
+*/
+//mając tylko wskaźnik klasy bazowej nie wiemy jakie sładowe zawiera klasa  pochodna (nie wiemy jak je skopiować)
+//mechanizm delete jest ogolny mozna stlumic dowoln a operacje
+class Shape {
+
+public :
+    Shape(const Shape &s) = delete;
+    Shape operator=(const Shape &s) = delete;
+
+    Shape(Shape &&) = delete; // żadnych operacji przenoszenia
+}
+
+//
+
+
+
+
